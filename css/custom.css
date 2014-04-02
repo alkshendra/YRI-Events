@@ -1,8 +1,8 @@
 /* BOOTSTRAP 3.x GLOBAL STYLES
 -------------------------------------------------- */
 body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
+//  color: #5a5a5a;
+  background: none repeat scroll 0 0 #EEEEEE;
 }
 
 
@@ -130,4 +130,60 @@ body {
     line-height: 1.4;
   }
 
+}
+
+
+
+.grids {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #CCCCCC;
+  margin-bottom: 10px;
+}
+.grids img {
+  border-radius: 4px 4px 0 0;
+}
+.posttitle {
+  padding: 0 10px 10px;
+  background: none repeat scroll 0 0 #FAFAFA;
+}
+.posttitle .title {
+  font-size: 16px;
+  padding-top: 4px;
+}
+.postmeta {
+}
+.postmeta2 {
+  height: 44px;
+}
+.meta1 > span, .meta2 > span {
+  padding: 0 5px 0px 5px;
+}
+.postmeta2 .meta1 {
+  border-radius: 0 0 0 4px;
+}
+.postmeta2 .meta2 {
+  border-radius: 0 0 4px 0;
+}
+.meta1, .meta2 {
+  font-size: 15px;
+  padding: 10px;
+  background: #f5f5f5;
+  border-top: 2px solid #fff;
+}
+.meta1 {
+  border-right: 1px solid #fff;
+}
+.meta2 {
+  border-left: 1px solid #fff;
+}
+.evnum {
+  background: none repeat scroll 0 0 #00B0C7;
+  font-weight: bold;
+  margin-right: 4px;
+  padding: 6px 8px !important;
+}
+.postdesc {
+  clear: both;
+  padding: 5px 10px;
 }
