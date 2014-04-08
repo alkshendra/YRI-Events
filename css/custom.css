@@ -189,19 +189,26 @@ footer {
   border-left: 1px solid #fff;
 }
 .meta2 span {
-  font-size: 20px;
   background: url("../img/icons/numchart.jpg") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+  font-size: 20px;
+  margin: -5px 3px 0 0;
+  padding: 8px;
+}
+.morev {
+  background-attachment: scroll !important;
+  background-clip: border-box !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  background-image: url("../img/icons/morev.png") !important;
+  background-origin: padding-box !important;
+  background-position: 0 0 !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding: 6px 18px !important;
 }
 .meta1 .glyphicon {
   color: #3498DB;
   padding: 0 5px;
   font-size: 20px;
-}
-.evnum {
-  background: none repeat scroll 0 0 #00B0C7;
-  font-weight: bold;
-  margin-right: 4px;
-  padding: 6px 8px !important;
 }
 .postdesc {
   clear: both;
@@ -324,10 +331,32 @@ footer {
   padding-right: 10px;
 }
 .cal-start {
-  color: #2ECC71;
+  background: url("../img/icons/cal-start.png") no-repeat scroll 0 0 / 32px auto rgba(0, 0, 0, 0);
+  padding: 1px 16px;
 }
 .cal-end {
-  color: #E67E22;
+  background: url("../img/icons/cal-end.png") no-repeat scroll 0 0 / 32px auto rgba(0, 0, 0, 0);
+  padding: 1px 16px;
+}
+.evtime {
+  background: url("../img/icons/clock.png") no-repeat scroll 0 0 / 32px auto rgba(0, 0, 0, 0);
+  padding: 1px 16px;
+}
+.evamt {
+  background: url("../img/icons/r.png") no-repeat scroll 0 0 / 32px auto rgba(0, 0, 0, 0);
+  padding: 1px 16px;
+}
+.evnum {
+  background: url("../img/icons/numchart.png") no-repeat scroll 0 0 / 32px auto rgba(0, 0, 0, 0);
+  padding: 1px 16px;
+}
+.evok {
+  background: url("../img/icons/ok.png") no-repeat scroll 0 0 / 32px auto rgba(0, 0, 0, 0);
+  padding: 1px 16px;
+}
+.evloc {
+  background: url("../img/icons/loc.png") no-repeat scroll 0 0 / 32px auto rgba(0, 0, 0, 0);
+  padding: 1px 16px;
 }
 .post-content {
   text-align: justify;
