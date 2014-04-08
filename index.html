@@ -2,11 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>My Website</title>
+    <title>YRI Events</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/flat-ui.css" rel="stylesheet">-->
+
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <script src="js/respond.js"></script>  
 
 <script type='text/javascript'>//<![CDATA[ 
@@ -37,38 +40,47 @@ $(document).ready( function() {
 });
 }//]]>
 </script>
+<script type="text/javascript">
+ $(document).ready(function(){
+      $('#posts-grid').addClass('animated fadeInDown');
+  });
+</script>
 
 </head>
 
 <body>
-<header class="container">
-  <div class="col-sm-4"></div>
-  <div class="navbar navbar-inverse navbar-static-top col-sm-8">
-    <div class="navbar-header">
-        <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="navbar-brand" href="#">Bootstrap 3</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="http://www.bootply.com" target="ext">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
+<header>
+  <div class="container">
+    <div class="col-sm-4">
+      <div class="logo"><img src="img/logo.jpg" /></div>
+    </div>
+    <div class="navbar mainnav navbar-inverse navbar-static-top col-sm-8">
+      <div class="navbar-header">
+          <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="navbar-brand" href="#">YRI Events</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="http://www.bootply.com" target="ext">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+      </div>
     </div>
   </div>
 </header>
@@ -93,7 +105,7 @@ $(document).ready( function() {
       <img src="/assets/example/bg_suburb.jpg" class="img-responsive">
       <div class="container">
         <div class="carousel-caption">
-          <h1>Bootstrap 3 Carousel Layout</h1>
+          <h1>Some Event YO</h1>
           <pthis is="" an="" example="" layout="" with="" carousel="" that="" uses="" the="" bootstrap="" 3="" styles.<="" small=""><p></p>
           <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn More</a>
         </p></pthis></div>
@@ -129,126 +141,137 @@ $(document).ready( function() {
   </a>  
 </div>
 <!-- /.carousel -->
-
-
-<div class="container posts-grid">
-  <div class="col-md-4 column productbox">
-        <div class="grids">
-          <img class="img-responsive" src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
-          <div class="posttitle">
-            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
-            <div class="title">Dancer's Paradise</div>
-          </div>
-          <div class="postmeta">
-            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
-          </div>
-          <div class="postdesc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </div>
-          <div class="postmeta2">
-            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
-          </div>
-        </div>
+<div class="searchbar">
+  <div class="container">
+    <div class="searchtitle">Search for Events</div>
+    <div class="searchinput"><input type="text" placeholder="Search the Event by Name or City" class="searchfield search"><a class="btn btn-srch btn-md" role="button">Show Events</a></div>
+    <span class="or">OR</span>
+    <div class="searchinput date1"><input type="text" class="searchfield date"><span class="searchdate"></span></div>
+    <div class="searchinput date2"><input type="text" class="searchfield date"><span class="searchdate"></span></div>
   </div>
-  <div class="col-md-4 column productbox">
-        <div class="grids">
-          <img class="img-responsive" src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
-          <div class="posttitle">
-            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
-            <div class="title">Dancer's Paradise</div>
-          </div>
-          <div class="postmeta">
-            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
-          </div>
-          <div class="postdesc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </div>
-          <div class="postmeta2">
-            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
-          </div>
-        </div>
-  </div>
-  <div class="col-md-4 column productbox">
-        <div class="grids">
-          <img class="img-responsive" src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
-          <div class="posttitle">
-            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
-            <div class="title">Dancer's Paradise</div>
-          </div>
-          <div class="postmeta">
-            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
-          </div>
-          <div class="postdesc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </div>
-          <div class="postmeta2">
-            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
-          </div>
-        </div>
-  </div>
-  <div class="col-md-4 column productbox">
-        <div class="grids">
-          <img class="img-responsive" src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
-          <div class="posttitle">
-            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
-            <div class="title">Dancer's Paradise</div>
-          </div>
-          <div class="postmeta">
-            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
-          </div>
-          <div class="postdesc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </div>
-          <div class="postmeta2">
-            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
-          </div>
-        </div>
-  </div>
-  <div class="col-md-4 column productbox">
-        <div class="grids">
-          <img class="img-responsive" src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
-          <div class="posttitle">
-            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
-            <div class="title">Dancer's Paradise</div>
-          </div>
-          <div class="postmeta">
-            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
-          </div>
-          <div class="postdesc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </div>
-          <div class="postmeta2">
-            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
-          </div>
-        </div>
-  </div>
-  <div class="col-md-4 column productbox">
-        <div class="grids">
-          <img class="img-responsive" src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
-          <div class="posttitle">
-            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
-            <div class="title">Dancer's Paradise</div>
-          </div>
-          <div class="postmeta">
-            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
-          </div>
-          <div class="postdesc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </div>
-          <div class="postmeta2">
-            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
-          </div>
-        </div>
-  </div>
-
 </div>
 
+<div id="posts-grid" class="container posts-grid">
+  <div class="col-md-4 column productbox">
+        <div class="grids">
+          <img class="img-responsive" src="img/placeholder.jpg" class="img-responsive">
+          <div class="posttitle">
+            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
+            <div class="title">Dancer's Paradise</div>
+          </div>
+          <div class="postmeta">
+            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
+          </div>
+          <div class="postdesc class="palette-paragraph"">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </div>
+          <div class="postmeta2">
+            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
+          </div>
+        </div>
+  </div>
+  <div class="col-md-4 column productbox">
+        <div class="grids">
+          <img class="img-responsive" src="img/placeholder.jpg" class="img-responsive">
+          <div class="posttitle">
+            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
+            <div class="title">Dancer's Paradise</div>
+          </div>
+          <div class="postmeta">
+            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
+          </div>
+          <div class="postdesc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </div>
+          <div class="postmeta2">
+            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
+          </div>
+        </div>
+  </div>
+  <div class="col-md-4 column productbox">
+        <div class="grids">
+          <img class="img-responsive" src="img/placeholder.jpg" class="img-responsive">
+          <div class="posttitle">
+            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
+            <div class="title">Dancer's Paradise</div>
+          </div>
+          <div class="postmeta">
+            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
+          </div>
+          <div class="postdesc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </div>
+          <div class="postmeta2">
+            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
+          </div>
+        </div>
+  </div>
+  <div class="col-md-4 column productbox">
+        <div class="grids">
+          <img class="img-responsive" src="img/placeholder.jpg" class="img-responsive">
+          <div class="posttitle">
+            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
+            <div class="title">Dancer's Paradise</div>
+          </div>
+          <div class="postmeta">
+            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
+          </div>
+          <div class="postdesc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </div>
+          <div class="postmeta2">
+            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
+          </div>
+        </div>
+  </div>
+  <div class="col-md-4 column productbox">
+        <div class="grids">
+          <img class="img-responsive" src="img/placeholder.jpg" class="img-responsive">
+          <div class="posttitle">
+            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
+            <div class="title">Dancer's Paradise</div>
+          </div>
+          <div class="postmeta">
+            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
+          </div>
+          <div class="postdesc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </div>
+          <div class="postmeta2">
+            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
+          </div>
+        </div>
+  </div>
+  <div class="col-md-4 column productbox">
+        <div class="grids">
+          <img class="img-responsive" src="img/placeholder.jpg" class="img-responsive">
+          <div class="posttitle">
+            <div class="pull-right"><a href="#" class="fb_ic"><img src="img/facebook-icon.png"/></a></div>
+            <div class="title">Dancer's Paradise</div>
+          </div>
+          <div class="postmeta">
+            <div class="col-sm-6 meta1">City: Pune</div><div class="col-sm-6 meta2">Age: 10+ yrs</div>
+          </div>
+          <div class="postdesc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </div>
+          <div class="postmeta2">
+            <div class="col-sm-6 meta1"><span class="glyphicon glyphicon-th-list"></span>Arts & Exercises</div><div class="col-sm-6 meta2"><span class="evnum">45</span>More Events<span class="glyphicon glyphicon-chevron-right"></span></div>
+          </div>
+        </div>
+  </div>
+</div>
 
+<footer>
+  <div class="container">
+    <div class="footernav">
+      <a href="#">Home</a> · <a href="#">All Events</a> · <a href="#">Hosts</a> · <a href="#">About Us</a> · <a href="#">get in Touch</a>
+    </div>
+  </div>
+</footer>
 
-<!-- javascript
- -->
-    <script src="http://code.jquery.com/jquery-1.10.2
-    .min.js"></script>
+<!-- javascript-->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

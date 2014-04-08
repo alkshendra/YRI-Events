@@ -4,8 +4,15 @@ body {
 //  color: #5a5a5a;
   background: none repeat scroll 0 0 #EEEEEE;
 }
-
-
+header {
+  background: url("../img/headbg.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  padding: 11px 0;
+}
+footer {
+  background: url("../img/footbg.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  height: 140px;
+  text-align: center;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -19,14 +26,17 @@ body {
   z-index: 10;
 }
 
-
+.navbar.mainnav {
+  margin: 30px 0;
+  border-radius: 4px;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 60px;
+//  margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -133,7 +143,6 @@ body {
 }
 
 
-
 .grids {
   background: none repeat scroll 0 0 #FFFFFF;
   border-radius: 4px;
@@ -144,17 +153,18 @@ body {
   border-radius: 4px 4px 0 0;
 }
 .posttitle {
-  padding: 0 10px 10px;
+  padding: 4px 10px 6px;
   background: none repeat scroll 0 0 #FAFAFA;
 }
 .posttitle .title {
-  font-size: 16px;
+  color: #555555;
+  font-size: 20px;
   padding-top: 4px;
 }
 .postmeta {
 }
 .postmeta2 {
-  height: 44px;
+  height: 52px;
 }
 .meta1 > span, .meta2 > span {
   padding: 0 5px 0px 5px;
@@ -167,15 +177,25 @@ body {
 }
 .meta1, .meta2 {
   font-size: 15px;
-  padding: 10px;
   background: #f5f5f5;
   border-top: 2px solid #fff;
+  height: 52px;
+  padding: 12px 6px;
 }
 .meta1 {
   border-right: 1px solid #fff;
 }
 .meta2 {
   border-left: 1px solid #fff;
+}
+.meta2 span {
+  font-size: 20px;
+  background: url("../img/icons/numchart.jpg") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+}
+.meta1 .glyphicon {
+  color: #3498DB;
+  padding: 0 5px;
+  font-size: 20px;
 }
 .evnum {
   background: none repeat scroll 0 0 #00B0C7;
@@ -187,3 +207,135 @@ body {
   clear: both;
   padding: 5px 10px;
 }
+
+.searchbar {
+  background: none repeat scroll 0 0 #FFFFFF;
+  margin-bottom: 35px;
+//  padding: 20px 0;
+}
+.searchtitle {
+  border-bottom: 4px solid #FF0000;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  float: left;
+}
+.searchinput {
+  float: left;
+  padding-top: 12px;
+  padding-left: 50px;
+}
+.searchinput.date1 {
+  padding-left: 0;
+}
+.searchinput.date2 {
+  padding-left: 12px;
+}
+.searchdate {
+  background: url("../img/icons/cal-red.png") no-repeat scroll 0 0 / 85% auto rgba(0, 0, 0, 0);
+  margin-left: -34px;
+  padding: 7px 18px;
+}
+.searchfield.search {
+  margin-right: 10px;
+  width: 245px;
+}
+.searchfield {
+  padding: 8px;
+}
+.searchfield.search {
+  padding-le: 12px;
+}
+.or {
+  color: #AAAAAA;
+  float: left;
+  font-size: 20px;
+  padding: 12px 25px;
+}
+.btn-srch {
+  background-color: #2ECC71;
+  border-color: #2ECC71;
+  color: #FFFFFF;
+  padding: 7px 12px;
+}
+.btn-srch:hover {
+  color: #EEE;
+}
+
+.footernav {
+  border-bottom: 1px solid #444444;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  padding: 25px 0 15px;
+}
+
+.footernav a {
+  color: #fff;
+}
+.footernav a:hover {
+  color: #E74C3C;
+  text-decoration: none;
+}
+
+/* Single Event Page */
+.single-ev {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #CCCCCC;
+  margin: 40px auto;
+}
+.imgbox {
+  padding-right: 0;
+  padding-left: 0;
+}
+.imgbox img {
+  padding: 4px 4px 0;
+}
+.greybg {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  background: #EEEEEE;
+  border: 2px solid #fff;
+  display: table;
+}
+.greenbg {
+  background: none repeat scroll 0 0 #2ECC71;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: center;
+}
+.evhead {
+  color: #555555;
+  font-size: 24px;
+  font-weight: bold;
+}
+.evmeta {
+  display: table-cell;
+  vertical-align: middle;
+}
+.evicons {
+  font-size: 26px;
+  padding-right: 10px;
+}
+.cal-start {
+  color: #2ECC71;
+}
+.cal-end {
+  color: #E67E22;
+}
+.post-content {
+  text-align: justify;
+}
+.speaker {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #CCCCCC;
+  padding: 3px;
+}
+
